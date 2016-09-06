@@ -1,4 +1,4 @@
-package com.room115.view;
+package com.room115.slidingview;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.gksen.view.R;
 
 
 public class MainActivity extends Activity {
@@ -42,6 +40,7 @@ public class MainActivity extends Activity {
 
             private TextView text;
             private TextView date;
+
             public ViewHolder(View v) {
                 super(v);
                 text = (TextView) v.findViewById(R.id.wish_list_name);

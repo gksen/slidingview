@@ -12,10 +12,8 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.Scroller;
 
-import com.gksen.view.R;
-
 /**
- * @author Konstantin Gvozdyuk (kgv@115room.com)
+ * @author kgv (kgv@115room.com)
  */
 public class SlidingView extends ViewGroup {
 
@@ -256,10 +254,7 @@ public class SlidingView extends ViewGroup {
                 float xDelta = Math.abs(x - mLastX);
                 float yDelta = Math.abs(y - mLastY);
 
-//                float yDeltaTotal = y - mStartY;
                 if (xDelta > yDelta && Math.abs(xDelta) > mScaledTouchSlop) {
-//                    mIsBeingDragged = true;
-//                    mStartY = y;
                     return true;
                 }
                 break;
@@ -315,8 +310,6 @@ public class SlidingView extends ViewGroup {
             if (mSelectListener != null) {
                 mSelectListener.onDeselect();
             }
-            // ?
-//            close();
         }
     }
 

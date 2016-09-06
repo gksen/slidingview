@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="SlidingView">
         <attr name="staticLayer" format="integer"/>
         <attr name="slidingLayer" format="integer"/>
     </declare-styleable>
-
 </resources>
